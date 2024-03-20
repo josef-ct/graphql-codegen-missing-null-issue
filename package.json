@@ -1,0 +1,29 @@
+{
+  "name": "graphql-codegen-missing-null-issue",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node ./dist/launch.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josef-ct/graphql-codegen-missing-null-issue.git"
+  },
+  "author": "jose",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/josef-ct/graphql-codegen-missing-null-issue/issues"
+  },
+  "homepage": "https://github.com/josef-ct/graphql-codegen-missing-null-issue#readme",
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "typescript": "^5.4.2"
+  },
+  "dependencies": {
+    "@pothos/core": "^3.41.0",
+    "fastify": "^4.26.2",
+    "fastify-plugin": "^4.5.1",
+    "mercurius": "^14.0.0"
+  }
+}
