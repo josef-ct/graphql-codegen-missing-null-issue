@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build": "tsc -p tsconfig.json",
-    "start": "node ./dist/launch.js"
+    "build:graphql": "tsc -p tsconfig.json",
+    "start:graphql": "node ./dist/launch.js",
+    "build:web": "next build",
+    "start:web": "next start"
   },
   "repository": {
     "type": "git",
@@ -18,12 +20,19 @@
   "homepage": "https://github.com/josef-ct/graphql-codegen-missing-null-issue#readme",
   "devDependencies": {
     "@types/node": "^20.11.30",
+    "@types/react": "^18.2.67",
+    "@types/react-dom": "^18.2.22",
     "typescript": "^5.4.2"
   },
   "dependencies": {
+    "@apollo/client": "^3.9.8",
     "@pothos/core": "^3.41.0",
     "fastify": "^4.26.2",
     "fastify-plugin": "^4.5.1",
-    "mercurius": "^14.0.0"
+    "graphql": "^16.8.1",
+    "mercurius": "^14.0.0",
+    "next": "^13.5.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
