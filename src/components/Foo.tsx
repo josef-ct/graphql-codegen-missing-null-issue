@@ -11,9 +11,9 @@ export const fooQuery = gql`
 `;
 
 export const Foo = () => {
-  const { data, loading, error } = useFooQuery({});
+  const { data, loading, error } = useFooQuery();
 
   console.debug({ data, loading, error });
 
-  return <p>Foo</p>;
+  return <p>{data?.foo.name || '-'}</p>;
 };

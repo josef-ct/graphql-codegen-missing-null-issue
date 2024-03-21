@@ -12,7 +12,7 @@ export const server = fastify({
 });
 
 export const launch = (async () => {
-  server.register(cors);
+  server.register(cors, { origin: '*' });
   server.register(graphqlPlugin, { schema: buildSchema() });
 
   try {
