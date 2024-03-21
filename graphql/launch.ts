@@ -1,4 +1,5 @@
 import { fastify } from 'fastify';
+import cors from '@fastify/cors';
 import { graphqlPlugin } from './graphqlPlugin';
 import { buildSchema } from './schema';
 
@@ -11,6 +12,7 @@ export const server = fastify({
 });
 
 export const launch = (async () => {
+  server.register(cors);
   server.register(graphqlPlugin, { schema: buildSchema() });
 
   try {

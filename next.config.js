@@ -4,7 +4,7 @@
  * @type {import('next').NextConfig}
  **/
 const nextConfig = {
-  distDir: 'dist',
+  distDir: 'dist/web',
 };
 
 module.exports = nextConfig;
