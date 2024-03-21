@@ -8,6 +8,7 @@ class Foo {
   }
 
   get name() {
+    throw new Error('Example error');
     return this.data.name as string;
   }
 }
